@@ -8,57 +8,57 @@ declare let turtle: {
 	 * Move the turtle forward one block.
 	 * @tuplereturn
 	*/
-	forward: (this: void) => [ success: boolean, reason: string | null ]
+	forward: (this: void) => LuaMultiReturn<[ success: boolean, reason: string | null ]>
 
 	/** 
 	 * Move the turtle backwards one block.
 	 * @tuplereturn
 	*/
-	back: (this: void) => [ success: boolean, reason: string | null ]
+	back: (this: void) => LuaMultiReturn<[ success: boolean, reason: string | null ]>
 
 	/** 
 	 * Move the turtle up one block.
 	 * @tuplereturn
 	*/
-	up: (this: void) => [ success: boolean, reason: string | null ]
+	up: (this: void) => LuaMultiReturn<[ success: boolean, reason: string | null ]>
 
 	/** 
 	 * Move the turtle down one block.
 	 * @tuplereturn
 	*/
-	down: (this: void) => [ success: boolean, reason: string | null ]
+	down: (this: void) => LuaMultiReturn<[ success: boolean, reason: string | null ]>
 
 	/** 
 	 * Rotate the turtle 90 degress to the left.
 	 * @tuplereturn
 	*/
-	turnLeft: (this: void) => [ success: boolean, reason: string | null ]
+	turnLeft: (this: void) => LuaMultiReturn<[ success: boolean, reason: string | null ]>
 
 	/** 
 	 * Rotate the turtle 90 degress to the right.
 	 * @tuplereturn
 	*/
-	turnRight: (this: void) => [ success: boolean, reason: string | null ]
+	turnRight: (this: void) => LuaMultiReturn<[ success: boolean, reason: string | null ]>
 
 	/** 
 	 * Rotate the turtle 90 degress to the right.
 	 * @tuplereturn
 	*/
-	dig: (this: void, side?: string) => [ success: boolean, reason: string | null ]
+	dig: (this: void, side?: string) => LuaMultiReturn<[ success: boolean, reason: string | null ]>
 
 	/** 
 	 * Attempt to break the block above the turtle. See `dig` for full details.
 	 * @param side The specific tool to use.
 	 * @tuplereturn
 	*/
-	digUp: (this: void, side?: string) => [ success: boolean, reason: string | null ]
+	digUp: (this: void, side?: string) => LuaMultiReturn<[ success: boolean, reason: string | null ]>
 
 	/** 
 	 * Attempt to break the block below the turtle. See dig for full details.
 	 * @param side The specific tool to use.
 	 * @tuplereturn
 	*/
-	digDown: (this: void, side?: string) => [ success: boolean, reason: string | null ]
+	digDown: (this: void, side?: string) => LuaMultiReturn<[ success: boolean, reason: string | null ]>
 
 	/** 
 	 * Place a block or item into the world in front of the turtle.
@@ -67,21 +67,21 @@ declare let turtle: {
 	 * @param text When placing a sign, set its contents to this text.
 	 * @tuplereturn
 	*/
-	place: (this: void, text?: string) => [ success: boolean, reason: string | null ]
+	place: (this: void, text?: string) => LuaMultiReturn<[ success: boolean, reason: string | null ]>
 
 	/** 
 	 * Place a block or item into the world above the turtle.
 	 * @param text When placing a sign, set its contents to this text.
 	 * @tuplereturn
 	*/
-	placeUp: (this: void, text?: string) => [ success: boolean, reason: string | null ]
+	placeUp: (this: void, text?: string) => LuaMultiReturn<[ success: boolean, reason: string | null ]>
 
 	/** 
 	 * Place a block or item into the world below the turtle.
 	 * @param text When placing a sign, set its contents to this text.
 	 * @tuplereturn
 	*/
-	placeDown: (this: void, text?: string) => [ success: boolean, reason: string | null ]
+	placeDown: (this: void, text?: string) => LuaMultiReturn<[ success: boolean, reason: string | null ]>
 
 
 	/** 
@@ -90,7 +90,7 @@ declare let turtle: {
 	 * @throws If dropping an invalid number of items.
 	 * @tuplereturn
 	*/
-	drop: (this: void, count?: number) => [ success: boolean, reason: string | null ]
+	drop: (this: void, count?: number) => LuaMultiReturn<[ success: boolean, reason: string | null ]>
 
 	/** 
 	 * Drop the currently selected stack into the inventory above the turtle, or as an item into the world if there is no inventory.
@@ -98,7 +98,7 @@ declare let turtle: {
 	 * @throws If dropping an invalid number of items.
 	 * @tuplereturn
 	*/
-	dropUp: (this: void, count?: number) => [ success: boolean, reason: string | null ]
+	dropUp: (this: void, count?: number) => LuaMultiReturn<[ success: boolean, reason: string | null ]>
 
 	/** 
 	 * Drop the currently selected stack into the inventory in front of the turtle, or as an item into the world if there is no inventory.
@@ -106,7 +106,7 @@ declare let turtle: {
 	 * @throws If dropping an invalid number of items.
 	 * @tuplereturn
 	*/
-	dropDown: (this: void, count?: number) => [ success: boolean, reason: string | null ]
+	dropDown: (this: void, count?: number) => LuaMultiReturn<[ success: boolean, reason: string | null ]>
 
 	/** 
 	 * Change the currently selected slot.
@@ -175,7 +175,7 @@ declare let turtle: {
 	 * @returns The reason nothing was attacked.
 	 * @tuplereturn
 	*/
-	attack: (this: void, side?: string) => [ boolean, string | null ]
+	attack: (this: void, side?: string) => LuaMultiReturn<[ boolean, string | null ]>
 
 	/**
 	 * Attack the entity above the turtle.
@@ -184,7 +184,7 @@ declare let turtle: {
 	 * @returns The reason nothing was attacked.
 	 * @tuplereturn
 	*/
-	attackUp: (this: void, side?: string) => [ boolean, string | null ]
+	attackUp: (this: void, side?: string) => LuaMultiReturn<[ boolean, string | null ]>
 
 	/**
 	 * Attack the entity below the turtle.
@@ -193,7 +193,7 @@ declare let turtle: {
 	 * @returns The reason nothing was attacked.
 	 * @tuplereturn
 	*/
-	attackDown: (this: void, side?: string) => [ boolean, string | null ]
+	attackDown: (this: void, side?: string) => LuaMultiReturn<[ boolean, string | null ]>
 
 	/**
 	 * Suck an item from the inventory in front of the turtle, or from an item floating in the world.
@@ -205,7 +205,7 @@ declare let turtle: {
 	 * @throws If given an invalid number of items.
 	 * @tuplereturn
 	*/
-	suck: (this: void, count?: number) => [ boolean, string | null ]
+	suck: (this: void, count?: number) => LuaMultiReturn<[ boolean, string | null ]>
 
 	/**
 	 * Suck an item from the inventory above the turtle, or from an item floating in the world.
@@ -215,7 +215,7 @@ declare let turtle: {
 	 * @throws If given an invalid number of items.
 	 * @tuplereturn
 	*/
-	suckUp: (this: void, count?: number) => [ boolean, string | null ]
+	suckUp: (this: void, count?: number) => LuaMultiReturn<[ boolean, string | null ]>
 
 	/**
 	 * Suck an item from the inventory below the turtle, or from an item floating in the world.
@@ -225,7 +225,7 @@ declare let turtle: {
 	 * @throws If given an invalid number of items.
 	 * @tuplereturn
 	*/
-	suckDown: (this: void, count?: number) => [ boolean, string | null ]
+	suckDown: (this: void, count?: number) => LuaMultiReturn<[ boolean, string | null ]>
 
 	/**
 	*/
