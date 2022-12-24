@@ -1,6 +1,5 @@
 type side = "top" | "bottom" | "front" | "back" | "left" | "right";
 
-/** @noSelf */
 declare class Table extends Object {
     // TODO: something idk lol
 }
