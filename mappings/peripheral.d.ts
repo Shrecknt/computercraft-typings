@@ -4,25 +4,23 @@ declare class Table extends Object {
     // TODO: something idk lol
 }
 
-/** @noSelf **/
 declare class Monitor extends Table {
-    write: (text: string) => void;
-    clearLine: () => void;
-    setCursorPos: (x: number, y: number) => void;
+    write: (this: void, text: string) => void;
+    clearLine: (this: void) => void;
+    setCursorPos: (this: void, x: number, y: number) => void;
 }
 
 type Peripheral = Monitor;
 type PeripheralType = "monitor";
 
-/** @noSelf **/
 declare class peripheral {
-    static getNames: () => string[];
-    static isPresent: (name: side | string) => boolean;
-    static getType: (peripheral: side | string | Peripheral) => (PeripheralType | undefined);
-    static hasType: (peripheral: side | string | Peripheral, peripheral_type: PeripheralType) => boolean;
-    static getMethods: (name: side | string) => (string[] | undefined);
-    static getName: (peripheral: Peripheral) => string;
-    static call: (name: side | string, method: string, ...arguments: any) => any;
-    static wrap: (name: side | string) => (Peripheral | undefined);
-    static find: (type: string, filter?: (name: string, wrapped: Peripheral) => boolean) => Peripheral;
+    static getNames: (this: void) => string[];
+    static isPresent: (this: void, name: side | string) => boolean;
+    static getType: (this: void, peripheral: side | string | Peripheral) => (PeripheralType | undefined);
+    static hasType: (this: void, peripheral: side | string | Peripheral, peripheral_type: PeripheralType) => boolean;
+    static getMethods: (this: void, name: side | string) => (string[] | undefined);
+    static getName: (this: void, peripheral: Peripheral) => string;
+    static call: (this: void, name: side | string, method: string, ...arguments: any) => any;
+    static wrap: (this: void, name: side | string) => (Peripheral | undefined);
+    static find: (this: void, type: string, filter?: (name: string, wrapped: Peripheral) => boolean) => Peripheral;
 }
