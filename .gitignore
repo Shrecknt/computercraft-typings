@@ -7,3 +7,5 @@ package.json
 tsconfig.json
 dist/
 mappings/dump.d.ts
+mappings/json.d.ts
+.gitignore
