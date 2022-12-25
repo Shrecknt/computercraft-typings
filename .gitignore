@@ -6,6 +6,6 @@ index.ts
 package.json
 tsconfig.json
 dist/
-mappings/dump.d.ts
-mappings/json.d.ts
+typings/dump.d.ts
+typings/json.d.ts
 .gitignore

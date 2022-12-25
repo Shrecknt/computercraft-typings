@@ -1,5 +1,5 @@
 # Computercraft Typings
-Typescript mappings for computercraft
+Typescript type definitions for computercraft
 
 Typings made for use with [typescript to lua](https://typescripttolua.github.io/) based on typings from [mat's computercraft miner](https://github.com/mat-1/computercraft-miner)
 
