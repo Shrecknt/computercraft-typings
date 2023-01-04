@@ -1,0 +1,521 @@
+- [ ] Types
+    - [ ] BinaryReadHandle
+    - [~] ReadHandle
+    - [~] WriteHandle
+    - [ ] BinaryWriteHandle
+    - [~] Websocket
+    - [~] Response
+    - [ ] Handle
+    - [ ] Redirect
+    - [ ] Vector
+    - [ ] Window
+    - [ ] Doc
+    - [ ] TransferredFiles
+    - [ ] TransferredFile
+
+- [ ] Globals
+    - [X] _G
+        - [X] sleep
+        - [X] write
+        - [X] print
+        - [X] printError
+        - [X] read
+        - [X] _HOST
+        - [X] _CC_DEFAULT_SETTINGS
+    - [ ] colors
+        - [ ] white
+        - [ ] orange
+        - [ ] magenta
+        - [ ] lightBlue
+        - [ ] yellow
+        - [ ] lime
+        - [ ] pink
+        - [ ] gray
+        - [ ] lightGray
+        - [ ] cyan
+        - [ ] purple
+        - [ ] blue
+        - [ ] brown
+        - [ ] green
+        - [ ] red
+        - [ ] black
+        - [ ] combine
+        - [ ] subtract
+        - [ ] test
+        - [ ] packRGB
+        - [ ] unpackRGB
+        - [ ] rgb8
+        - [ ] toBlit
+    - [ ] colours
+        - [ ] grey
+        - [ ] lightGrey
+    - [ ] commands
+        - [ ] exec
+        - [ ] execAsync
+        - [ ] list
+        - [ ] getBlockPosition
+        - [ ] getBlockInfos
+        - [ ] getBlockInfo
+        - [ ] native
+        - [ ] async
+    - [ ] disk
+        - [ ] isPresent
+        - [ ] getLabel
+        - [ ] setLabel
+        - [ ] hasData
+        - [ ] getMountPath
+        - [ ] hasAudio
+        - [ ] getAudioTitle
+        - [ ] playAudio
+        - [ ] stopAudio
+        - [ ] eject
+        - [ ] getID
+    - [X] fs
+        - [X] complete
+        - [X] isDriveRoot
+        - [X] list
+        - [X] combine
+        - [X] getName
+        - [X] getDir
+        - [X] getSize
+        - [X] exists
+        - [X] isDir
+        - [X] isReadOnly
+        - [X] makeDir
+        - [X] move
+        - [X] copy
+        - [X] delete
+        - [X] open
+        - [X] getDrive
+        - [X] getFreeSpace
+        - [X] find
+        - [X] getCapacity
+        - [X] attributes
+    - [ ] gps
+        - [ ] CHANNEL_GPS
+        - [ ] locate
+    - [ ] help
+        - [ ] path
+        - [ ] setPath
+        - [ ] lookup
+        - [ ] topics
+        - [ ] completeTopic
+    - [X] http
+        - [X] get
+        - [X] post
+        - [X] request
+        - [X] checkURLAsync
+        - [X] checkURL
+        - [X] websocketAsync
+        - [X] websocket
+    - [ ] io
+        - [ ] stdin
+        - [ ] stdout
+        - [ ] stderr
+        - [ ] close
+        - [ ] flush
+        - [ ] input
+        - [ ] lines
+        - [ ] open
+        - [ ] output
+        - [ ] read
+        - [ ] type
+        - [ ] write
+    - [ ] keys
+        - [ ] getName
+    - [ ] multishell
+        - [ ] getFocus
+        - [ ] setFocus
+        - [ ] getTitle
+        - [ ] setTitle
+        - [ ] getCurrent
+        - [ ] launch
+        - [ ] getCount
+    - [ ] os
+        - [ ] loadAPI
+        - [ ] unloadAPI
+        - [ ] pullEvent
+        - [ ] pullEventRaw
+        - [ ] sleep
+        - [ ] version
+        - [ ] run
+        - [ ] queueEvent
+        - [ ] startTimer
+        - [ ] cancelTimer
+        - [ ] setAlarm
+        - [ ] cancelAlarm
+        - [ ] shutdown
+        - [ ] reboot
+        - [ ] getComputerID
+        - [ ] computerID
+        - [ ] getComputerLabel
+        - [ ] computerLabel
+        - [ ] setComputerLabel
+        - [ ] clock
+        - [ ] time
+        - [ ] day
+        - [ ] epoch
+        - [ ] date
+    - [ ] paintutils
+        - [ ] parseImage
+        - [ ] loadImage
+        - [ ] drawPixel
+        - [ ] drawLine
+        - [ ] drawBox
+        - [ ] drawFilledBox
+        - [ ] drawImage
+    - [ ] parallel
+        - [ ] waitForAny
+        - [ ] waitForAll
+    - [ ] peripheral
+        - [X] getNames
+        - [X] isPresent
+        - [~] getType
+        - [~] hasType
+        - [~] getMethods
+        - [~] getName
+        - [~] call
+        - [~] wrap
+        - [~] find
+    - [ ] pocket
+        - [ ] equipBack
+        - [ ] unequipBack
+    - [ ] rednet
+        - [ ] CHANNEL_BROADCAST
+        - [ ] CHANNEL_REPEAT
+        - [ ] MAX_ID_CHANNELS
+        - [ ] open
+        - [ ] close
+        - [ ] isOpen
+        - [ ] send
+        - [ ] broadcast
+        - [ ] receive
+        - [ ] host
+        - [ ] unhost
+        - [ ] lookup
+        - [ ] run
+    - [ ] redstone
+        - [ ] getSides
+        - [ ] setOutput
+        - [ ] getOutput
+        - [ ] getInput
+        - [ ] setAnalogOutput
+        - [ ] setAnalogueOutput
+        - [ ] getAnalogOutput
+        - [ ] getAnalogueOutput
+        - [ ] getAnalogInput
+        - [ ] getAnalogueInput
+        - [ ] setBundledOutput
+        - [ ] getBundledOutput
+        - [ ] getBundledInput
+        - [ ] testBundledInput
+    - [ ] settings
+        - [ ] define
+        - [ ] undefine
+        - [ ] set
+        - [ ] get
+        - [ ] getDetails
+        - [ ] unset
+        - [ ] clear
+        - [ ] getNames
+        - [ ] load
+        - [ ] save
+    - [ ] shell
+        - [ ] execute
+        - [ ] run
+        - [ ] exit
+        - [ ] dir
+        - [ ] setDir
+        - [ ] path
+        - [ ] setPath
+        - [ ] resolve
+        - [ ] resolveProgram
+        - [ ] programs
+        - [ ] complete
+        - [ ] completeProgram
+        - [ ] setCompletionFunction
+        - [ ] getCompletionInfo
+        - [ ] getRunningProgram
+        - [ ] setAlias
+        - [ ] clearAlias
+        - [ ] aliases
+        - [ ] openTab
+        - [ ] switchTab
+    - [ ] term
+        - [ ] nativePaletteColour
+        - [ ] nativePaletteColor
+        - [~] write
+        - [~] scroll
+        - [~] getCursorPos
+        - [~] setCursorPos
+        - [ ] getCursorBlink
+        - [~] setCursorBlink
+        - [~] getSize
+        - [~] clear
+        - [~] clearLine
+        - [ ] getTextColour
+        - [~] getTextColor
+        - [ ] setTextColour
+        - [~] setTextColor
+        - [ ] getBackgroundColour
+        - [~] getBackgroundColor
+        - [ ] setBackgroundColour
+        - [~] setBackgroundColor
+        - [ ] isColour
+        - [~] isColor
+        - [~] blit
+        - [ ] setPaletteColour
+        - [ ] setPaletteColor
+        - [ ] getPaletteColour
+        - [ ] getPaletteColor
+        - [~] redirect
+        - [~] current
+        - [~] native
+    - [X] textutils
+        - [X] slowWrite
+        - [X] slowPrint
+        - [X] formatTime
+        - [X] pagedPrint
+        - [X] tabulate
+        - [X] pagedTabulate
+        - [X] empty_json_array
+        - [X] json_null
+        - [X] serialize
+        - [X] serialise
+        - [X] unserialize
+        - [X] unserialise
+        - [X] serializeJSON
+        - [X] serialiseJSON
+        - [X] unserializeJSON
+        - [X] unserialiseJSON
+        - [X] urlEncode
+        - [X] complete
+    - [ ] turtle
+        - [~] craft
+        - [~] forward
+        - [~] back
+        - [~] up
+        - [~] down
+        - [~] turnLeft
+        - [~] turnRight
+        - [~] dig
+        - [~] digUp
+        - [~] digDown
+        - [~] place
+        - [~] placeUp
+        - [~] placeDown
+        - [~] drop
+        - [~] dropUp
+        - [~] dropDown
+        - [~] select
+        - [X] getItemCount
+        - [X] getItemSpace
+        - [X] detect
+        - [X] detectUp
+        - [X] detectDown
+        - [~] compare
+        - [~] compareUp
+        - [~] compareDown
+        - [X] attack
+        - [X] attackUp
+        - [X] attackDown
+        - [X] suck
+        - [X] suckUp
+        - [X] suckDown
+        - [~] getFuelLevel
+        - [~] refuel
+        - [~] compareTo
+        - [~] transferTo
+        - [X] getSelectedSlot
+        - [~] getFuelLimit
+        - [~] equipLeft
+        - [~] equipRight
+        - [X] inspect
+        - [X] inspectUp
+        - [X] inspectDown
+        - [~] getItemDetail
+        - [ ] native
+    - [ ] vector
+        - [ ] new
+    - [ ] window
+        - [ ] create
+
+- [ ] Modules
+    - [ ] cc.audio.dfpwm
+        - [ ] make_encoder
+        - [ ] encode
+        - [ ] make_decoder
+        - [ ] decode
+    - [ ] cc.completion
+        - [ ] choice
+        - [ ] peripheral
+        - [ ] side
+        - [ ] setting
+        - [ ] command
+    - [ ] cc.expect
+        - [ ] expect
+        - [ ] field
+        - [ ] range
+    - [ ] cc.image.nft
+        - [ ] parse
+        - [ ] load
+        - [ ] draw
+    - [ ] cc.pretty
+        - [ ] empty
+        - [ ] space
+        - [ ] line
+        - [ ] space_line
+        - [ ] text
+        - [ ] concat
+        - [ ] nest
+        - [ ] group
+        - [ ] write
+        - [ ] print
+        - [ ] render
+        - [ ] pretty
+        - [ ] pretty_print
+    - [ ] cc.require
+        - [ ] make
+    - [ ] cc.shell.completion
+        - [ ] file
+        - [ ] dir
+        - [ ] dirOrFile
+        - [ ] program
+        - [ ] programWithArgs
+        - [ ] help
+        - [ ] choice
+        - [ ] peripheral
+        - [ ] side
+        - [ ] setting
+        - [ ] command
+        - [ ] build
+    - [ ] cc.strings
+        - [ ] wrap
+        - [ ] ensure_width
+
+- [ ] Peripherals
+    - [ ] command
+        - [ ] getCommand
+        - [ ] setCommand
+        - [ ] runCommand
+    - [ ] computer
+        - [ ] turnOn
+        - [ ] shutdown
+        - [ ] reboot
+        - [ ] getID
+        - [ ] isOn
+        - [ ] getLabel
+    - [ ] drive
+        - [ ] turnOn
+        - [ ] shutdown
+        - [ ] reboot
+        - [ ] getID
+        - [ ] isOn
+        - [ ] getLabel
+    - [ ] modem
+        - [ ] open
+        - [ ] isOpen
+        - [ ] close
+        - [ ] closeAll
+        - [ ] transmit
+        - [ ] isWireless
+        - [ ] getNamesRemote
+        - [ ] isPresentRemote
+        - [ ] getTypeRemote
+        - [ ] hasTypeRemote
+        - [ ] getMethodsRemote
+        - [ ] callRemote
+        - [ ] getNameLocal
+    - [ ] monitor
+        - [ ] setTextScale
+        - [ ] getTextScale
+        - [~] write
+        - [ ] scroll
+        - [ ] getCursorPos
+        - [~] setCursorPos
+        - [ ] getCursorBlink
+        - [ ] setCursorBlink
+        - [ ] getSize
+        - [ ] clear
+        - [~] clearLine
+        - [ ] getTextColour
+        - [ ] getTextColor
+        - [ ] setTextColour
+        - [ ] setTextColor
+        - [ ] getBackgroundColour
+        - [ ] getBackgroundColor
+        - [ ] setBackgroundColour
+        - [ ] setBackgroundColor
+        - [ ] isColour
+        - [ ] isColor
+        - [ ] blit
+        - [ ] setPaletteColour
+        - [ ] setPaletteColor
+        - [ ] getPaletteColour
+        - [ ] getPaletteColor
+    - [ ] printer
+        - [ ] write
+        - [ ] getCursorPos
+        - [ ] setCursorPos
+        - [ ] getPageSize
+        - [ ] newPage
+        - [ ] endPage
+        - [ ] setPageTitle
+        - [ ] getInkLevel
+        - [ ] getPaperLevel
+    - [ ] speaker
+        - [ ] playNote
+        - [ ] playSound
+        - [ ] playAudio
+        - [ ] stop
+
+- [ ] Generic Peripherals
+    - [ ] energy_storage
+        - [ ] getEnergy
+        - [ ] getEnergyCapacity
+    - [ ] fluid_storage
+        - [ ] tanks
+        - [ ] pushFluid
+        - [ ] pullFluid
+    - [ ] inventory
+        - [ ] size
+        - [ ] list
+        - [ ] getItemDetail
+        - [ ] getItemLimit
+        - [ ] pushItems
+        - [ ] pullItems
+
+- [ ] Events
+    - [ ] alarm
+    - [ ] char
+    - [ ] computer_command
+    - [ ] disk
+    - [ ] disk_eject
+    - [ ] file_transfer
+    - [ ] http_check
+    - [ ] http_failure
+    - [ ] http_success
+    - [ ] key
+    - [ ] key_up
+    - [ ] modem_message
+    - [ ] monitor_resize
+    - [ ] monitor_touch
+    - [ ] mouse_click
+    - [ ] mouse_drag
+    - [ ] mouse_scroll
+    - [ ] mouse_up
+    - [ ] paste
+    - [ ] peripheral
+    - [ ] peripheral_detach
+    - [ ] rednet_message
+    - [ ] redstone
+    - [ ] speaker_audio_empty
+    - [ ] task_complete
+    - [ ] term_resize
+    - [ ] terminate
+    - [ ] timer
+    - [ ] turtle_inventory
+    - [ ] websocket_closed
+    - [ ] websocket_failure
+    - [ ] websocket_message
+    - [ ] websocket_success
