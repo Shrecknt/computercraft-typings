@@ -1,4 +1,4 @@
-declare let ReadHandle: {
+declare interface ReadHandle {
 	/**
 	 * Read a line from the file.
 	 * @param withTrailing Whether to include the newline characters with the returned string. Defaults to false.

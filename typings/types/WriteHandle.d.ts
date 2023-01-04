@@ -1,4 +1,4 @@
-declare let WriteHandle: {
+declare interface WriteHandle {
 	/**
 	 * Write a string of characters to the file.
 	 * @param value The value to write to the file.
