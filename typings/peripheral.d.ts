@@ -3,24 +3,6 @@
  */
 type side = "top" | "bottom" | "front" | "back" | "left" | "right";
 
-/**
- * Representation of the lua table
- * It's basically the same as a javascript object, so there isnt much to do
- */
-declare class Table extends Object {
-    // TODO: something idk lol
-}
-
-/**
- * Monitor peripheral
- * TODO: Move to its own file
- */
-declare class Monitor extends Table {
-    write: (this: void, text: string) => void;
-    clearLine: (this: void) => void;
-    setCursorPos: (this: void, x: number, y: number) => void;
-}
-
 // List of peripherals and their names as strings
 type Peripheral = Monitor;
 type PeripheralType = "monitor";

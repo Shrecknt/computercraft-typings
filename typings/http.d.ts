@@ -1,11 +1,3 @@
-declare class Response {
-
-}
-
-declare class Websocket {
-
-}
-
 declare let http: {
     /**
      * Make a HTTP GET request to the given url.

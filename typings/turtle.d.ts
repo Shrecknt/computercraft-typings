@@ -1,8 +1,3 @@
-declare interface Block {
-	name: string
-	count?: number
-}
-
 declare let turtle: {
 	/** 
 	 * Move the turtle forward one block.
