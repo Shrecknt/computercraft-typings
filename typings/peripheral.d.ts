@@ -1,8 +1,8 @@
 type side = "top" | "bottom" | "front" | "back" | "left" | "right";
 
 // List of peripherals and their names as strings
-type Peripheral = Monitor;
-type PeripheralType = "monitor";
+type Peripheral = Command | Computer | Drive | Modem | Monitor | Printer | Speaker;
+type PeripheralType = "command" | "computer" | "drive" | "modem" | "monitor" | "printer" | "speaker";
 
 declare let peripheral: {
     /**
