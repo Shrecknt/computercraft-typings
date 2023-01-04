@@ -167,16 +167,16 @@
     - [ ] parallel
         - [ ] waitForAny
         - [ ] waitForAll
-    - [ ] peripheral
+    - [X] peripheral
         - [X] getNames
         - [X] isPresent
-        - [~] getType
-        - [~] hasType
-        - [~] getMethods
-        - [~] getName
-        - [~] call
-        - [~] wrap
-        - [~] find
+        - [X] getType
+        - [X] hasType
+        - [X] getMethods
+        - [X] getName
+        - [X] call
+        - [X] wrap
+        - [X] find
     - [ ] pocket
         - [ ] equipBack
         - [ ] unequipBack
