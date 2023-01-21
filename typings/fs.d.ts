@@ -130,7 +130,7 @@ declare let fs: {
 	 * @returns A message explaining why the file cannot be opened.
 	 * @tuplereturn
 	*/
-	open: <RW extends 'r' | 'w'>(this: void, path: string, mode: RW) => RW extends 'r' ? [ typeof ReadHandle ] : [ typeof WriteHandle, null ] | [ null, string | null ] // TODO: make this its own thing
+	open: <RW extends 'r' | 'w'>(this: void, path: string, mode: RW) => RW extends 'r' ? [ ReadHandle ] : [ WriteHandle, null ] | [ null, string | null ] // TODO: make this its own thing
 
 
 
