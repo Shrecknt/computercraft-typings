@@ -1,0 +1,25 @@
+declare namespace os {
+    function loadApi(this: void, path: string): boolean;
+    function unloadApi(this: void, name: string): void;
+    function pullEvent(this: void, filter?: string): LuaMultiReturn<[string, ...any]>;
+    function pullEventRaw(this: void, filter?: string): LuaMultiReturn<[string, ...any]>;
+    function sleep(this: void, time: number): void;
+    function version(this: void): string;
+    function run(this: void, env: Object | Table, path: string, ...arguments: any): boolean;
+    function queueEvent(this: void, name: string, ...parameters: any): void;
+    function startTimer(this: void, timer: number): number;
+    function cancelTimer(this: void, token: number): void;
+    function setAlarm(this: void, time: number): number;
+    function cancelAlarm(this: void, token: number): void;
+    function shutdown(this: void): void;
+    function reboot(this: void): void;
+    function getComputerID(this: void): number;
+    function computerID(this: void): number;
+    function getComputerLabel(this: void): string | null;
+    function setComputerLabel(this: void, label?: string): void;
+    function clock(this: void): number;
+    function time(this: void, locale?: string | Object | Table): any;
+    function day(this: void, args?: string): number;
+    function epoch(this: void, args?: string): number;
+    function date(this: void, format?: string, time?: number): any;
+};
