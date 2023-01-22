@@ -131,31 +131,31 @@
         - [ ] getCurrent
         - [ ] launch
         - [ ] getCount
-    - [ ] os
-        - [ ] loadAPI
-        - [ ] unloadAPI
-        - [ ] pullEvent
-        - [ ] pullEventRaw
-        - [ ] sleep
-        - [ ] version
-        - [ ] run
-        - [ ] queueEvent
-        - [ ] startTimer
-        - [ ] cancelTimer
-        - [ ] setAlarm
-        - [ ] cancelAlarm
-        - [ ] shutdown
-        - [ ] reboot
-        - [ ] getComputerID
-        - [ ] computerID
-        - [ ] getComputerLabel
-        - [ ] computerLabel
-        - [ ] setComputerLabel
-        - [ ] clock
-        - [ ] time
-        - [ ] day
-        - [ ] epoch
-        - [ ] date
+    - [~] os
+        - [~] loadAPI
+        - [~] unloadAPI
+        - [~] pullEvent
+        - [~] pullEventRaw
+        - [~] sleep
+        - [~] version
+        - [~] run
+        - [~] queueEvent
+        - [~] startTimer
+        - [~] cancelTimer
+        - [~] setAlarm
+        - [~] cancelAlarm
+        - [~] shutdown
+        - [~] reboot
+        - [~] getComputerID
+        - [~] computerID
+        - [~] getComputerLabel
+        - [~] computerLabel
+        - [~] setComputerLabel
+        - [~] clock
+        - [~] time
+        - [~] day
+        - [~] epoch
+        - [~] date
     - [ ] paintutils
         - [ ] parseImage
         - [ ] loadImage
@@ -180,20 +180,20 @@
     - [ ] pocket
         - [ ] equipBack
         - [ ] unequipBack
-    - [ ] rednet
-        - [ ] CHANNEL_BROADCAST
-        - [ ] CHANNEL_REPEAT
-        - [ ] MAX_ID_CHANNELS
-        - [ ] open
-        - [ ] close
-        - [ ] isOpen
-        - [ ] send
-        - [ ] broadcast
-        - [ ] receive
-        - [ ] host
-        - [ ] unhost
-        - [ ] lookup
-        - [ ] run
+    - [~] rednet
+        - [~] CHANNEL_BROADCAST
+        - [~] CHANNEL_REPEAT
+        - [~] MAX_ID_CHANNELS
+        - [~] open
+        - [~] close
+        - [~] isOpen
+        - [~] send
+        - [~] broadcast
+        - [~] receive
+        - [~] host
+        - [~] unhost
+        - [~] lookup
+        - [~] run
     - [ ] redstone
         - [ ] getSides
         - [ ] setOutput
@@ -412,20 +412,20 @@
         - [ ] getID
         - [ ] isOn
         - [ ] getLabel
-    - [ ] modem
-        - [ ] open
-        - [ ] isOpen
-        - [ ] close
-        - [ ] closeAll
-        - [ ] transmit
-        - [ ] isWireless
-        - [ ] getNamesRemote
-        - [ ] isPresentRemote
-        - [ ] getTypeRemote
-        - [ ] hasTypeRemote
-        - [ ] getMethodsRemote
-        - [ ] callRemote
-        - [ ] getNameLocal
+    - [~] modem
+        - [~] open
+        - [~] isOpen
+        - [~] close
+        - [~] closeAll
+        - [~] transmit
+        - [~] isWireless
+        - [~] getNamesRemote
+        - [~] isPresentRemote
+        - [~] getTypeRemote
+        - [~] hasTypeRemote
+        - [~] getMethodsRemote
+        - [~] callRemote
+        - [~] getNameLocal
     - [ ] monitor
         - [ ] setTextScale
         - [ ] getTextScale
