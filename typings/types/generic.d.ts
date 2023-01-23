@@ -1,0 +1,1 @@
+declare type Side = "top" | "bottom" | "left" | "right" | "front" | "back";

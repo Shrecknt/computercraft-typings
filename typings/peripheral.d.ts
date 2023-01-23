@@ -1,5 +1,3 @@
-type side = "top" | "bottom" | "front" | "back" | "left" | "right";
-
 // List of peripherals and their names as strings
 type Peripheral = Command | Computer | Drive | Modem | Monitor | Printer | Speaker;
 type PeripheralType = "command" | "computer" | "drive" | "modem" | "monitor" | "printer" | "speaker";
@@ -19,14 +17,14 @@ declare let peripheral: {
      * @param name The side or network name that you want to check.
      * @returns If a peripheral is present with the given name.
      */
-    isPresent: (this: void, name: side | PeripheralType | string) => boolean;
+    isPresent: (this: void, name: Side | PeripheralType | string) => boolean;
 
     /**
      * Get the types of a named or wrapped peripheral.
      * @param peripheral The name of the peripheral to find, or a wrapped peripheral instance.
      * @returns The peripheral's types, or nil if it is not present.
      */
-    getType: (this: void, peripheral: side | PeripheralType | string | Peripheral | Table) => (PeripheralType | null);
+    getType: (this: void, peripheral: Side | PeripheralType | string | Peripheral | Table) => (PeripheralType | null);
 
     /**
      * Check if a peripheral is of a particular type.
@@ -34,14 +32,14 @@ declare let peripheral: {
      * @param peripheral_type The type to check.
      * @returns If a peripheral has a particular type, or nil if it is not present.
      */
-    hasType: (this: void, peripheral: side | PeripheralType | string | Peripheral | Table, peripheral_type: PeripheralType) => (boolean | null);
+    hasType: (this: void, peripheral: Side | PeripheralType | string | Peripheral | Table, peripheral_type: PeripheralType) => (boolean | null);
 
     /**
      * Get all available methods for the peripheral with the given name.
      * @param name The name of the peripheral to find.
      * @returns A list of methods provided by this peripheral, or nil if it is not present.
      */
-    getMethods: (this: void, name: side | PeripheralType | string) => (string[] | null);
+    getMethods: (this: void, name: Side | PeripheralType | string) => (string[] | null);
 
     /**
      * Get the name of a peripheral wrapped with peripheral.wrap.
@@ -57,7 +55,7 @@ declare let peripheral: {
      * @param arguments Additional arguments to pass to the method
      * @returns The return values of the peripheral method.
      */
-    call: (this: void, name: side | PeripheralType | string, method: string, ...arguments: any) => any;
+    call: (this: void, name: Side | PeripheralType | string, method: string, ...arguments: any) => any;
 
     /**
      * Get a table containing all functions available on a peripheral.
@@ -65,7 +63,7 @@ declare let peripheral: {
      * @param name The name of the peripheral to wrap.
      * @returns The table containing the peripheral's methods, or nil if there is no peripheral present with the given name.
      */
-    wrap: (this: void, name: side | PeripheralType | string) => (Peripheral | null);
+    wrap: (this: void, name: Side | PeripheralType | string) => (Peripheral | null);
 
     /**
      * Find all peripherals of a specific type, and return the wrapped peripherals.
@@ -73,5 +71,5 @@ declare let peripheral: {
      * @param filter A filter function, which takes the peripheral's name and wrapped table and returns if it should be included in the result.
      * @returns 0 or more wrapped peripherals matching the given filters.
      */
-    find: (this: void, type: side | PeripheralType | string, filter?: (name: string, wrapped: Peripheral) => boolean) => Peripheral[];
+    find: (this: void, type: Side | PeripheralType | string, filter?: (name: string, wrapped: Peripheral) => boolean) => Peripheral[];
 }
